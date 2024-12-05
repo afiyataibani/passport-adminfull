@@ -1,0 +1,51 @@
+<footer class="footer text-center">
+  All Rights Reserved by Matrix-admin. Designed and Developed by
+  <a href="https://www.wrappixel.com">WrapPixel</a>.
+</footer>
+</div>
+</div>
+<script src="/libs/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="/extra-libs/sparkline/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="/js/custom.min.js"></script>
+<!--This page JavaScript -->
+<script src="/libs/flot/excanvas.js"></script>
+<script src="/libs/flot/jquery.flot.js"></script>
+<script src="/libs/flot/jquery.flot.pie.js"></script>
+<script src="/libs/flot/jquery.flot.time.js"></script>
+<script src="/libs/flot/jquery.flot.stack.js"></script>
+<script src="/libs/flot/jquery.flot.crosshair.js"></script>
+<script src="/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<script src="/js/pages/chart/chart-page-init.js"></script>
+<!-- Sweet Alert -->
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js
+"></script>
+<script>
+<% if (locals.flash.success.length > 0) { %>
+    Swal.fire({
+      title: 'Success',
+      text: '<%= locals.flash.success %>',
+      icon: 'success'
+    });
+<% } %>
+</script>
+<script>
+<% if (locals.flash.error.length > 0) { %>
+    Swal.fire({
+      title: 'Error',
+      text: '<%= locals.flash.error %>',
+      icon: 'error'
+    });
+<% } %>
+</script>
+</body>
+
+</html>
